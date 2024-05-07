@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Weather App</title>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">News</a></li>
+        <li><a href="index.html">Weather</a></li>
+        <li><a href="index.html">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="weather-section">
+        <div class="page">
+          <h1>LATEST WEATHER</h1>
+          <div class="archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city">Salt Lake City</h3>
+                  <p>Currently: <span id="current-desc"></span></p>
+                  <p>
+                    Tempature:
+                    <span id="current-temp">61</span> °F
+                  </p>
+                  <p>Wind Chill: <span id="current-windChill">58</span> °F</p>
+                  <p>Humidity: <span id="current-humid">29</span>%</p>
+                  <p>Wind Speed: <span id="current-windSpeed">8</span> mph</p>
+                </div>
+              </section>
+              <div>
+                <img
+                  src="https://img.freepik.com/free-vector/summer-season-sun-character_24877-82660.jpg?w=1480&t=st=1712785512~exp=1712786112~hmac=24e51b9780de5e1f04c710dd06a2ffbf19d2996fafa4116af1381998704426e3"
+                  alt="Image of a Cartoon Sun"
+                />
+              </div>
+            </article>
+
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city">Salt Lake City</h3>
+                <div class="flex">
+                  <div class="flex-col">
+                    <span id="dayTitle1" class="col-head">Day 1</span>
+                    <img
+                      id="weatherIcon1"
+                      class="weatherIcon"
+                      src="https://i.fbcd.co/products/resized/resized-750-500/351da23cedbe90cef9a48178bf90939f36252ba888a034f64c92ec72dc656d04.webp"
+                    />
+                    <span class="temp-data">
+                      <span id="data1">69</span>
+                      <span>°F</span>
+                    </span>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle2" class="col-head">Day 2</span>
+                    <img
+                      id="weatherIcon2"
+                      class="weatherIcon"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI_8vS75XPTadFjldnUPxA7RyytP6NrxYZYRFKFtTBQw&s"
+                    />
+                    <div class="temp-data">
+                      <span id="data2">77</span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle3" class="col-head">Day 3</span>
+                    <img
+                      id="weatherIcon3"
+                      class="weatherIcon"
+                      src="https://thumbs.dreamstime.com/b/cartoon-hand-drawn-sun-behind-cloud-isolated-vector-illustration-white-background-220341484.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data3">75</span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle4" class="col-head">Day 4</span>
+                    <img
+                      id="weatherIcon4"
+                      class="weatherIcon"
+                      src="https://thumbs.dreamstime.com/b/cartoon-cloud-rain-drops-isolated-white-background-115952474.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data4">63</span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle5" class="col-head">Day 5</span>
+                    <img
+                      id="weatherIcon5"
+                      class="weatherIcon"
+                      src="https://thumbs.dreamstime.com/b/cartoon-hand-drawn-sun-behind-cloud-isolated-vector-illustration-white-background-220341484.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data5">59</span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="news-section">
+        <div class="page">
+          <h1>LATEST NEWS</h1>
+          <div class="archive">
+            <article class="article">
+              <img id="header-img" alt="main article" />
+              <h2>
+                <a id="header-article"></a>
+              </h2>
+              <p id="header-desc">No Article Description.</p>
+            </article>
+            <article class="article">
+              <img
+                id="article-img-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Kitten_and_partial_reflection_in_mirror.jpg/800px-Kitten_and_partial_reflection_in_mirror.jpg"
+                alt="main article"
+              />
+              <h3>
+                <a id="article-link-1">No Article Title</a>
+              </h3>
+              <p id="article-desc-1">No Article Description.</p>
+            </article>
+            <article class="article">
+              <img
+                id="article-img-2"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Kitten_and_partial_reflection_in_mirror.jpg/800px-Kitten_and_partial_reflection_in_mirror.jpg"
+                alt="main article"
+              />
+              <h3>
+                <a id="article-link-2">No Article Title</a>
+              </h3>
+              <p id="article-desc-2">No Article Description.</p>
+            </article>
+            <article class="article">
+              <img
+                id="article-img-3"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Kitten_and_partial_reflection_in_mirror.jpg/800px-Kitten_and_partial_reflection_in_mirror.jpg"
+                alt="main article"
+              />
+              <h3>
+                <a id="article-link-3">No Article Title</a>
+              </h3>
+              <p id="article-desc-3">No Article Description.</p>
+            </article>
+            <article class="article">
+              <img
+                id="article-img-4"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Kitten_and_partial_reflection_in_mirror.jpg/800px-Kitten_and_partial_reflection_in_mirror.jpg"
+                alt="main article"
+              />
+              <h3>
+                <a id="article-link-4">No Article Title</a>
+              </h3>
+              <p id="article-desc-4">No Article Description.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      &copy; <span id="year">2024</span> | Luke Epperson |
+      <a
+        href="https://tooeletech.edu/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Tooele Technical College</a
+      >
+      <br />
+      last updated: <span id="updated">Monday April 15th 2024</span>
+    </footer>
+    <script src="weather-header.js"></script>
+  </body>
+</html>

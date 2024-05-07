@@ -1,0 +1,146 @@
+a {
+  color: #111;
+}
+ul {
+  max-width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1%;
+  overflow: hidden;
+  background-color: #8400ff;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #048caa;
+}
+li:nth-child(4) {
+  margin-left: 82%;
+}
+
+.active {
+  background-color: #048caa;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  padding: 4em;
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+/* News Section */
+
+hr {
+  height: 6px;
+  border: none;
+}
+.page {
+  padding: 2em;
+  background: #8400ff;
+  max-width: 100%;
+}
+.archive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 1em;
+  grid-auto-flow: dense;
+}
+.article {
+  text-align: center;
+  padding: 1em;
+  background: rgb(36, 36, 36);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
+}
+.article img {
+  max-width: 30%;
+}
+.five-day {
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
+  grid-column: 1 / 5;
+  background: rgb(36, 36, 36);
+}
+.day {
+  color: #111;
+  max-width: 100px;
+  height: 125px;
+  background-color: #048caa;
+}
+.article:nth-child(1) {
+  grid-column: 1 / -1;
+  background: rgb(36, 36, 36);
+}
+.article:nth-child(8) {
+  grid-column: -3 / -1;
+  background: rgb(36, 36, 36);
+}
+.article:nth-child(8):after {
+  content: "grid-column: -3 / -1";
+}
+@media (max-width: 680px) {
+  .archive {
+    display: flex;
+    flex-direction: column;
+  }
+  .article {
+    margin-bottom: 1em;
+  }
+} /* Weather sections */
+
+.article-five-day {
+  grid-column: 1 / -1;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
+  background-color: rgb(36, 36, 36);
+}
+.five-article {
+  text-align: center;
+}
+#city {
+  text-align: center;
+}
+#forecastTitle {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.flex-col {
+  text-align: center;
+  margin-right: 50px;
+}
+#stats {
+  text-align: start;
+  float: left;
+}
+.temp-data {
+  margin-left: 10px;
+  display: flex;
+}
+.weatherIcon {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 0px;
+  width: 100px;
+}
+footer {
+  text-align: center;
+  background-color: #8400ff;
+}
+
+a {
+  color: white;
+}
